@@ -19,18 +19,26 @@ app = Flask(__name__)
 @app.get("/")
 def accueil():
     return "Salut a tous, c'est bientôt les vacances !"
-@app.get("/loisirs")
-def loisirs():
-    return "Je fais du badminton et du volley."
+
 
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
 @app.get("/presentation")
 def presentation():
-    return "Je suis Corentin et j'ai 19 ans."
-
-
+    return """
+    <h1>Corentin Le Borgne</h1>
+    <p>Je suis étudiant en<strong>première année d'ingénieur</strong>.</p>
+    <h2>Ce que j'aime</h2>
+    <ul>
+        <li>La fête</li>
+        <li>La musique</li>
+        <li>Le sport</li>
+    </ul>
+    """
+@app.get("/loisirs")
+def loisirs():
+    return "Je fais du badminton et du volley."
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
