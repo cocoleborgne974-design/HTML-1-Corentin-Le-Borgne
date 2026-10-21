@@ -19,7 +19,9 @@ app = Flask(__name__)
 @app.get("/")
 def accueil():
     return "Salut a tous, c'est bientôt les vacances !"
-
+@app.get("/loisirs")
+def loisirs():
+    return "Je fais du badminton et du volley."
 
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
