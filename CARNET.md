@@ -35,7 +35,7 @@
 
 3. Que se passe-t-il si deux fonctions portent le même nom dans `flask_app.py` ? (Indice : essayez, puis lisez l'Error log.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le site affiche la commande qui passe en premier
 
 ---
 
