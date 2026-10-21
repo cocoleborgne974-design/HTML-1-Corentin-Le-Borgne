@@ -26,8 +26,8 @@ def loisirs():
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
-@app.get("/loisirs")
-def loisirs():
+@app.get("/presentation")
+def presentation():
     return "Je suis Corentin et j'ai 19 ans."
 
 
